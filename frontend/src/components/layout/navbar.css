@@ -1,0 +1,359 @@
+/* ==========================================
+   Navbar
+========================================== */
+
+.navbar {
+
+    height: 72px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 35px;
+
+    background: #ffffff;
+
+    border-bottom: 1px solid #e5e7eb;
+
+    position: relative;
+
+    top: 0;
+
+    z-index: 999;
+
+}
+
+/* ==========================================
+   Left
+========================================== */
+
+.navbar-left {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+.navbar-left svg {
+
+    color: #2563eb;
+}
+
+.navbar-left h2 {
+
+    margin: 0;
+
+    font-size: 1.7rem;
+
+    font-weight: 800;
+
+    color: #0f172a;
+}
+
+/* ==========================================
+   Search
+========================================== */
+
+.navbar-search {
+
+    width: 420px;
+
+    height: 46px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 0 18px;
+
+    border-radius: 14px;
+
+    background: #f3f6fb;
+
+    transition: .3s;
+}
+
+.navbar-search:focus-within {
+
+    box-shadow: 0 0 0 3px rgba(37,99,235,.15);
+
+    background: white;
+}
+
+.navbar-search svg {
+
+    color: #64748b;
+}
+
+.navbar-search input {
+
+    flex: 1;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    font-size: 15px;
+
+    color: #1e293b;
+}
+
+.navbar-search input::placeholder {
+
+    color: #94a3b8;
+}
+
+/* ==========================================
+   Right
+========================================== */
+
+.navbar-right {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+}
+
+/* ==========================================
+   Notification
+========================================== */
+
+.notification-btn {
+
+    width: 46px;
+
+    height: 46px;
+
+    border: none;
+
+    border-radius: 14px;
+
+    background: #f3f6fb;
+
+    cursor: pointer;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    transition: .3s;
+}
+
+.notification-btn:hover {
+
+    background: #2563eb;
+
+    color: white;
+}
+
+.notification-btn:hover svg {
+
+    color: white;
+}
+
+.notification-btn svg {
+
+    color: #334155;
+}
+
+.notification-dot {
+
+    position: absolute;
+
+    top: 12px;
+
+    right: 12px;
+
+    width: 9px;
+
+    height: 9px;
+
+    border-radius: 50%;
+
+    background: #ef4444;
+}
+
+/* ==========================================
+   Profile
+========================================== */
+
+.profile-dropdown {
+
+    position: relative;
+}
+
+.profile-btn {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    border: none;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    padding: 6px 10px;
+
+    border-radius: 12px;
+
+    transition: .3s;
+}
+
+.profile-btn:hover {
+
+    background: #f3f6fb;
+}
+
+.profile-avatar {
+
+    width: 42px;
+
+    height: 42px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-weight: 700;
+
+    color: white;
+
+    background: linear-gradient(
+        135deg,
+        #2563eb,
+        #7c3aed
+    );
+}
+
+.profile-btn span {
+
+    font-weight: 600;
+
+    color: #1e293b;
+}
+
+/* ==========================================
+   Dropdown
+========================================== */
+
+.dropdown-menu {
+
+    position: absolute;
+
+    top: 58px;
+
+    right: 0;
+
+    width: 170px;
+
+    background: white;
+
+    border-radius: 14px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,.15);
+
+    animation: dropdown .25s ease;
+}
+
+.dropdown-menu button {
+
+    width: 100%;
+
+    padding: 15px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    border: none;
+
+    background: white;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    color: #ef4444;
+}
+
+.dropdown-menu button:hover {
+
+    background: #fef2f2;
+}
+
+/* ==========================================
+   Animation
+========================================== */
+
+@keyframes dropdown {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(-10px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+/* ==========================================
+   Responsive
+========================================== */
+
+@media (max-width:900px){
+
+.navbar-search{
+
+    display:none;
+}
+
+.navbar{
+
+    padding:0 20px;
+}
+
+.navbar-left h2{
+
+    font-size:1.4rem;
+}
+
+}

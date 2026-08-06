@@ -1,0 +1,969 @@
+/* =====================================================
+   Investment Analyzer - Hero
+===================================================== */
+
+.investment-page{
+    padding:35px;
+    animation:fadeInvestment .6s ease;
+    background:
+        radial-gradient(circle at top right,
+        rgba(59,130,246,.08),
+        transparent 40%),
+
+        radial-gradient(circle at bottom left,
+        rgba(124,58,237,.06),
+        transparent 35%),
+
+        #f8fbff;
+}
+
+.investment-hero{
+    margin-bottom:35px;
+}
+
+.investment-badge{
+
+    display:inline-block;
+
+    padding:8px 18px;
+
+    border-radius:999px;
+
+    background:rgba(37,99,235,.1);
+
+    color:#2563eb;
+
+    font-size:.82rem;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+    margin-bottom:18px;
+}
+
+.investment-hero h1{
+
+    font-size:2.7rem;
+
+    font-weight:800;
+
+    color:#0f172a;
+
+    margin-bottom:12px;
+}
+
+.investment-hero p{
+
+    max-width:700px;
+
+    color:#64748b;
+
+    line-height:1.8;
+
+    font-size:1.05rem;
+}
+
+
+/* =====================================================
+   Tabs
+===================================================== */
+
+.investment-tabs{
+
+    display:flex;
+
+    gap:15px;
+
+    margin-bottom:35px;
+}
+
+.investment-tab{
+
+    border:none;
+
+    outline:none;
+
+    cursor:pointer;
+
+    padding:12px 28px;
+
+    border-radius:14px;
+
+    background:#fff;
+
+    color:#64748b;
+
+    font-weight:600;
+
+    transition:.3s;
+
+    border:1px solid rgba(226,232,240,.8);
+
+    box-shadow:
+        0 8px 22px rgba(15,23,42,.06);
+}
+
+.investment-tab:hover{
+
+    transform:translateY(-2px);
+
+    color:#2563eb;
+}
+
+.investment-tab--active{
+
+    background:linear-gradient(
+        135deg,
+        #2563eb,
+        #7c3aed
+    );
+
+    color:#fff;
+
+    border:none;
+}
+
+
+/* =====================================================
+   Summary Cards
+===================================================== */
+
+.investment-summary-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:24px;
+
+    margin-bottom:35px;
+}
+
+.investment-summary-card{
+
+    background:#fff;
+
+    border-radius:22px;
+
+    padding:28px;
+
+    border:1px solid rgba(226,232,240,.8);
+
+    box-shadow:
+        0 12px 35px rgba(15,23,42,.08);
+
+    transition:.35s;
+}
+
+.investment-summary-card:hover{
+
+    transform:translateY(-7px);
+
+    box-shadow:
+        0 18px 40px rgba(37,99,235,.15);
+}
+
+.summary-icon{
+
+    width:64px;
+
+    height:64px;
+
+    border-radius:18px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    color:#fff;
+
+    font-size:26px;
+
+    margin-bottom:18px;
+}
+
+.summary-icon.blue{
+
+    background:linear-gradient(
+        135deg,
+        #2563eb,
+        #3b82f6
+    );
+}
+
+.summary-icon.green{
+
+    background:linear-gradient(
+        135deg,
+        #10b981,
+        #22c55e
+    );
+}
+
+.summary-icon.orange{
+
+    background:linear-gradient(
+        135deg,
+        #f59e0b,
+        #f97316
+    );
+}
+
+.summary-icon.purple{
+
+    background:linear-gradient(
+        135deg,
+        #7c3aed,
+        #9333ea
+    );
+}
+
+.investment-summary-card span{
+
+    display:block;
+
+    color:#64748b;
+
+    font-size:.92rem;
+
+    margin-bottom:10px;
+}
+
+.investment-summary-card h2{
+
+    font-size:2rem;
+
+    color:#0f172a;
+
+    font-weight:800;
+}
+
+/* =====================================================
+   Main Layout
+===================================================== */
+
+.investment-main-grid{
+
+    display:grid;
+
+    grid-template-columns:380px 1fr;
+
+    gap:28px;
+
+    align-items:start;
+}
+
+.investment-form-section{
+
+    position:sticky;
+
+    top:20px;
+}
+
+.investment-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:28px;
+}
+
+
+/* =====================================================
+   Detail + AI Grid
+===================================================== */
+
+.investment-detail-grid{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr;
+
+    gap:24px;
+
+    align-items:stretch;
+}
+
+
+/* =====================================================
+   Investment Detail Card
+===================================================== */
+
+.investment-detail-card{
+
+    background:#fff;
+
+    border-radius:24px;
+
+    padding:30px;
+
+    border:1px solid rgba(226,232,240,.8);
+
+    box-shadow:
+        0 12px 35px rgba(15,23,42,.08);
+
+    transition:.35s;
+}
+
+.investment-detail-card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:
+        0 18px 45px rgba(37,99,235,.12);
+}
+
+
+/* Investment Form Card */
+
+.investment-form-section .finance-form{
+    background:#fff;
+    border:1px solid #e5e7eb;
+    border-radius:24px;
+    padding:32px;
+    box-shadow:0 15px 40px rgba(15,23,42,.08);
+}
+
+/* =====================================================
+   Header
+===================================================== */
+
+.investment-detail-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+    margin-bottom:28px;
+}
+
+.investment-detail-header h2{
+
+    font-size:1.7rem;
+
+    color:#0f172a;
+
+    font-weight:800;
+
+    margin-bottom:8px;
+}
+
+.investment-detail-header p{
+
+    color:#64748b;
+
+    font-size:.95rem;
+}
+
+
+/* =====================================================
+   Delete Button
+===================================================== */
+
+.delete-icon-btn{
+
+    width:46px;
+
+    height:46px;
+
+    border:none;
+
+    cursor:pointer;
+
+    border-radius:14px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:#fee2e2;
+
+    color:#dc2626;
+
+    transition:.3s;
+}
+
+.delete-icon-btn:hover{
+
+    background:#dc2626;
+
+    color:#fff;
+
+    transform:scale(1.05);
+}
+
+
+/* =====================================================
+   Investment Metrics
+===================================================== */
+
+.investment-metrics{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:18px;
+
+    margin-bottom:30px;
+}
+
+.metric-box{
+
+    background:#f8fbff;
+
+    border:1px solid rgba(226,232,240,.8);
+
+    border-radius:18px;
+
+    padding:20px;
+
+    transition:.3s;
+}
+
+.metric-box:hover{
+
+    transform:translateY(-3px);
+
+    border-color:#2563eb;
+
+    box-shadow:
+        0 10px 25px rgba(37,99,235,.10);
+}
+
+.metric-box span{
+
+    display:block;
+
+    color:#64748b;
+
+    font-size:.9rem;
+
+    margin-bottom:10px;
+}
+
+.metric-box h3{
+
+    font-size:1.55rem;
+
+    color:#0f172a;
+
+    font-weight:800;
+}
+
+
+/* =====================================================
+   Chart
+===================================================== */
+
+.investment-chart-wrapper{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    padding:18px;
+
+    border:1px solid rgba(226,232,240,.7);
+
+    box-shadow:
+        inset 0 0 0 1px rgba(255,255,255,.35);
+}
+
+.investment-chart-wrapper .recharts-wrapper{
+
+    margin:auto;
+}
+
+/* =====================================================
+   AI Investment Card
+===================================================== */
+
+.investment-ai-card{
+
+    background:#ffffff;
+
+    border-radius:24px;
+
+    padding:35px 28px;
+
+    border:1px solid rgba(226,232,240,.8);
+
+    box-shadow:
+        0 12px 35px rgba(15,23,42,.08);
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    transition:.35s;
+}
+
+.investment-ai-card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:
+        0 20px 45px rgba(37,99,235,.15);
+}
+
+.investment-ai-card .ai-icon{
+
+    width:90px;
+
+    height:90px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:38px;
+
+    color:#ffffff;
+
+    margin-bottom:25px;
+
+    background:linear-gradient(
+        135deg,
+        #c6c9cf,
+        #7c3aed
+    );
+
+    box-shadow:
+        0 15px 35px rgba(37,99,235,.25);
+}
+
+.investment-ai-card h3{
+
+    font-size:1.5rem;
+
+    font-weight:800;
+
+    color:#0f172a;
+
+    margin-bottom:18px;
+}
+
+.investment-ai-card p{
+
+    color:#64748b;
+
+    line-height:1.8;
+
+    margin-bottom:18px;
+}
+
+.investment-ai-card strong{
+
+    color:#3d6acd;
+}
+
+.investment-ai-card .btn{
+    margin-top:18px;
+    width:100%;
+    justify-content:center;
+
+    background:linear-gradient(135deg,#666b75,#7c3aed);
+    color:#fff;
+    border:none;
+    border-radius:14px;
+
+    padding:14px 20px;
+
+    font-size:16px;
+    font-weight:700;
+
+    transition:all .3s ease;
+}
+
+.investment-ai-card .btn:hover{
+    background:linear-gradient(135deg,#1d4ed8,#676071);
+    color:#fff;
+    transform:translateY(-3px);
+    box-shadow:0 15px 30px rgba(79,70,229,.35);
+}
+
+.investment-ai-card .btn:active{
+    transform:scale(.98);
+} 
+
+
+/* =====================================================
+   SAVED INVESTMENTS
+===================================================== */
+
+.saved-investments-card{
+
+    background:#fff;
+
+    border-radius:24px;
+
+    padding:30px;
+
+    border:1px solid rgba(226,232,240,.8);
+
+    box-shadow:
+    0 12px 35px rgba(15,23,42,.08);
+
+    margin-top:28px;
+}
+
+.saved-investments-card h2,
+.saved-investments-card h3{
+
+    font-size:2rem;
+
+    font-weight:800;
+
+    color:#0f172a;
+
+    margin-bottom:28px;
+}
+
+.saved-investment-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(380px,1fr));
+
+    gap:26px;
+}
+
+
+/* =====================================================
+   INDIVIDUAL INVESTMENT CARD
+===================================================== */
+
+.saved-investment-card{
+
+    background:#f8fbff;
+
+    border-radius:18px;
+
+    padding:22px;
+
+    min-height:170px;
+
+    border:1px solid rgba(226,232,240,.9);
+
+    cursor:pointer;
+
+    transition:.35s ease;
+}
+
+.saved-investment-card:hover{
+
+    transform:translateY(-7px);
+
+    background:linear-gradient(
+        135deg,
+        #eeeff1,
+        #ffffff
+    );
+
+    box-shadow:
+        0 20px 40px rgba(97,104,118,.25);
+}
+
+.saved-investment-card.active{
+
+    background:linear-gradient(
+        135deg,
+        #76787d,
+        #7138d3
+    );
+
+    color:#fff;
+
+    border:none;
+
+    box-shadow:
+        0 18px 40px rgba(37,99,235,.25);
+}
+
+.saved-investment-card.active h4,
+.saved-investment-card.active span,
+.saved-investment-card.active strong{
+
+    color:#fff;
+}
+
+/* =====================================================
+   CARD TOP
+===================================================== */
+
+.saved-investment-top{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:18px;
+}
+
+.saved-investment-top h4{
+
+    font-size:1.15rem;
+
+    font-weight:700;
+
+    margin:0;
+
+    line-height:1.4;
+}
+
+/* =====================================================
+   DELETE BUTTON
+===================================================== */
+
+.saved-investment-delete{
+
+    width:40px;
+
+    height:40px;
+
+    border:none;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    background:#fee2e2;
+
+    color:#dc2626;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    transition:.3s ease;
+
+    flex-shrink:0;
+}
+
+.saved-investment-delete:hover{
+
+    background:#dc2626;
+
+    color:#fff;
+
+    transform:scale(1.08);
+}
+
+.saved-investment-card.active .saved-investment-delete{
+
+    background:rgba(255,255,255,.18);
+
+    color:#fff;
+}
+
+.saved-investment-card.active .saved-investment-delete:hover{
+
+    background:#fff;
+
+    color:#dc2626;
+}
+
+/* =====================================================
+   CARD BODY
+===================================================== */
+
+.saved-investment-body{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+    gap:18px;
+
+    margin-top:18px;
+}
+
+.saved-investment-body div{
+
+    display:flex;
+
+    flex-direction:column;
+}
+
+.saved-investment-body span{
+
+    font-size:.82rem;
+
+    opacity:.75;
+
+    margin-bottom:8px;
+}
+
+.saved-investment-body strong{
+
+    font-size:1.15rem;
+
+    font-weight:700;
+}
+
+.saved-investment-card.active .saved-investment-body span{
+
+    color:rgba(255,255,255,.8);
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width:900px){
+
+    .saved-investment-grid{
+
+        grid-template-columns:1fr;
+    }
+
+    .saved-investments-card{
+
+        padding:22px;
+    }
+
+    .saved-investment-body{
+
+        flex-direction:column;
+
+        gap:18px;
+    }
+}
+
+@media (max-width:640px){
+
+    .saved-investment-top{
+
+        align-items:flex-start;
+    }
+
+    .saved-investment-delete{
+
+        width:36px;
+
+        height:36px;
+    }
+
+    .saved-investment-top h4{
+
+        font-size:1rem;
+    }
+}
+
+
+/* =====================================================
+   ANIMATION
+===================================================== */
+
+.saved-investment-card{
+
+    animation:fadeInvestment .45s ease;
+}
+
+
+/* =====================================================
+   Scrollbar
+===================================================== */
+
+.saved-investment-grid::-webkit-scrollbar{
+
+    width:8px;
+
+    height:8px;
+}
+
+.saved-investment-grid::-webkit-scrollbar-thumb{
+
+    background:#cbd5e1;
+
+    border-radius:20px;
+}
+
+.saved-investment-grid::-webkit-scrollbar-thumb:hover{
+
+    background:#94a3b8;
+}
+
+
+/* =====================================================
+   Chart
+===================================================== */
+
+.investment-chart-wrapper{
+
+    min-height:340px;
+}
+
+.investment-chart-wrapper .recharts-responsive-container{
+
+    margin:auto;
+}
+
+
+/* =====================================================
+   Button Hover
+===================================================== */
+
+.investment-ai-card .btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+        0 15px 30px rgba(37,99,235,.25);
+}
+
+
+/* =====================================================
+   Empty State
+===================================================== */
+
+.loan-analyzer__empty{
+
+    background:#ffffff;
+
+    border-radius:24px;
+
+    padding:60px;
+
+    text-align:center;
+
+    border:1px solid rgba(226,232,240,.8);
+
+    box-shadow:
+        0 12px 35px rgba(15,23,42,.08);
+}
+
+.loan-analyzer__empty p{
+
+    color:#64748b;
+
+    font-size:1rem;
+
+    line-height:1.7;
+}

@@ -1,0 +1,1029 @@
+/* =====================================================
+   LOAN ANALYZER
+===================================================== */
+
+.loan-analyzer{
+
+    padding:35px;
+
+    animation:fadeLoan .5s ease;
+
+    background:
+    radial-gradient(circle at top right,
+    rgba(37,99,235,.08),
+    transparent 35%),
+
+    radial-gradient(circle at bottom left,
+    rgba(124,58,237,.06),
+    transparent 35%),
+
+    #f8fbff;
+
+}
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.loan-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:35px;
+}
+
+.loan-badge{
+
+    display:inline-block;
+
+    padding:8px 16px;
+
+    border-radius:999px;
+
+    background:#dbeafe;
+
+    color:#2563eb;
+
+    font-size:.82rem;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+    margin-bottom:16px;
+}
+
+.loan-header h1{
+
+    font-size:2.8rem;
+
+    font-weight:800;
+
+    color:#0f172a;
+
+    margin-bottom:12px;
+}
+
+.loan-header p{
+
+    color:#64748b;
+
+    font-size:1.05rem;
+
+    line-height:1.8;
+
+    max-width:700px;
+}
+
+/* =====================================================
+   MAIN GRID
+===================================================== */
+
+.loan-main-grid{
+
+    display:grid;
+
+    grid-template-columns:380px 1fr;
+
+    gap:30px;
+
+    align-items:start;
+}
+
+.loan-form-card{
+
+    background:#ffffff;
+
+    border-radius:24px;
+
+    padding:28px;
+
+    border:1px solid rgba(226,232,240,.8);
+
+    box-shadow:
+
+    0 10px 35px rgba(15,23,42,.08);
+
+    position:sticky;
+
+    top:25px;
+}
+
+.loan-right-section{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:30px;
+}
+
+/* =====================================================
+   SUMMARY CARDS
+===================================================== */
+
+.loan-summary-cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:24px;
+
+    margin-bottom:30px;
+}
+
+.summary-card{
+
+    background:white;
+
+    border-radius:22px;
+
+    padding:28px;
+
+    border:1px solid rgba(226,232,240,.8);
+
+    box-shadow:
+
+    0 12px 35px rgba(15,23,42,.08);
+
+    transition:.35s ease;
+}
+
+.summary-card:hover{
+
+    transform:translateY(-7px);
+
+    box-shadow:
+
+    0 20px 45px rgba(37,99,235,.15);
+}
+
+.summary-card h4{
+
+    color:#64748b;
+
+    margin-top:18px;
+
+    margin-bottom:10px;
+
+    font-size:.95rem;
+
+    font-weight:600;
+}
+
+.summary-card h2{
+
+    color:#0f172a;
+
+    font-size:2rem;
+
+    font-weight:800;
+}
+
+/* =====================================================
+   ICONS
+===================================================== */
+
+.summary-icon{
+
+    width:65px;
+
+    height:65px;
+
+    border-radius:18px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    color:white;
+
+    font-size:28px;
+}
+
+.blue{
+
+    background:linear-gradient(
+    135deg,
+    #2563eb,
+    #3b82f6);
+}
+
+.green{
+
+    background:linear-gradient(
+    135deg,
+    #10b981,
+    #22c55e);
+}
+
+.orange{
+
+    background:linear-gradient(
+    135deg,
+    #f59e0b,
+    #f97316);
+}
+
+.purple{
+
+    background:linear-gradient(
+    135deg,
+    #7c3aed,
+    #9333ea);
+}
+
+/* =====================================================
+   LOAN SUMMARY + AI GRID
+===================================================== */
+
+.loan-info-grid{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr;
+
+    gap:25px;
+}
+
+/* =====================================================
+   LOAN SUMMARY CARD
+===================================================== */
+
+.loan-summary-card{
+
+    background:#ffffff;
+
+    border-radius:24px;
+
+    padding:30px;
+
+    border:1px solid rgba(226,232,240,.8);
+
+    box-shadow:
+
+    0 12px 35px rgba(15,23,42,.08);
+
+    transition:.35s ease;
+}
+
+.loan-summary-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:
+
+    0 20px 45px rgba(37,99,235,.12);
+}
+
+/* =====================================================
+   CARD HEADER
+===================================================== */
+
+.card-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:25px;
+}
+
+.card-header h3{
+
+    font-size:1.4rem;
+
+    font-weight:700;
+
+    color:#0f172a;
+
+    margin-bottom:6px;
+}
+
+.card-header p{
+
+    color:#64748b;
+
+    font-size:.92rem;
+}
+
+/* =====================================================
+   LOAN DETAILS
+===================================================== */
+
+.loan-details-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:18px;
+
+    margin-bottom:35px;
+}
+
+.loan-details-grid div{
+
+    background:#f8fbff;
+
+    padding:18px;
+
+    border-radius:16px;
+
+    border:1px solid rgba(226,232,240,.8);
+
+    transition:.3s;
+}
+
+.loan-details-grid div:hover{
+
+    background:#eef4ff;
+
+    transform:translateY(-2px);
+}
+
+.loan-details-grid span{
+
+    display:block;
+
+    color:#64748b;
+
+    font-size:.85rem;
+
+    margin-bottom:8px;
+}
+
+.loan-details-grid strong{
+
+    color:#0f172a;
+
+    font-size:1.05rem;
+
+    font-weight:700;
+}
+
+/* =====================================================
+   CHART
+===================================================== */
+
+.loan-summary-card .recharts-responsive-container{
+
+    margin-top:20px;
+}
+
+.loan-summary-card canvas{
+
+    border-radius:18px;
+}
+
+/* =====================================================
+   AI CARD
+===================================================== */
+
+.loan-ai-card{
+
+    background:#ffffff;
+
+    border-radius:24px;
+
+    padding:30px;
+
+    border:1px solid rgba(226,232,240,.8);
+
+    box-shadow:
+
+    0 12px 35px rgba(15,23,42,.08);
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    transition:.35s ease;
+}
+
+.loan-ai-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:
+
+    0 20px 45px rgba(37,99,235,.12);
+}
+
+.ai-icon{
+
+    width:90px;
+
+    height:90px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:linear-gradient(
+    135deg,
+    #2563eb,
+    #7c3aed);
+
+    color:white;
+
+    font-size:38px;
+
+    margin-bottom:22px;
+
+    box-shadow:
+
+    0 15px 35px rgba(37,99,235,.30);
+}
+
+.loan-ai-card h3{
+
+    color:#0f172a;
+
+    font-size:1.45rem;
+
+    font-weight:700;
+
+    margin-bottom:18px;
+}
+
+.loan-ai-card p{
+
+    color:#6e7887;
+
+    line-height:1.8;
+
+    margin-bottom:18px;
+}
+
+.loan-ai-card strong{
+
+    color:#2563eb;
+
+    font-weight:700;
+}
+
+.loan-ai-card button{
+
+    margin-top:15px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    width:100%;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:linear-gradient(
+    135deg,
+    #8f97ac,
+    #3232f4);
+
+    color:rgb(223, 214, 214);
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.loan-ai-card button:hover {
+    background: linear-gradient(135deg, #2563eb, #6d6a73) !important;
+    color: #ffffff !important;
+    border-color: transparent !important;
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 15px 30px rgba(37, 99, 235, 0.35);
+}
+
+/* =====================================================
+   SAVED LOANS
+===================================================== */
+
+.saved-loans-card{
+
+    background:#ffffff;
+
+    border-radius:24px;
+
+    padding:30px;
+
+    border:1px solid rgba(226,232,240,.8);
+
+    box-shadow:
+    0 12px 35px rgba(15,23,42,.08);
+}
+
+.saved-loans-card h3{
+
+    font-size:1.45rem;
+
+    font-weight:700;
+
+    color:#0f172a;
+
+    margin-bottom:25px;
+}
+
+/* =====================================================
+   SAVED LOAN GRID
+===================================================== */
+
+.saved-loans-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(260px,1fr));
+
+    gap:22px;
+}
+
+/* =====================================================
+   SAVED LOAN CARD
+===================================================== */
+
+.saved-loan-card{
+
+    background:#f8fbff;
+
+    border-radius:18px;
+
+    padding:22px;
+
+    border:1px solid rgba(226,232,240,.9);
+
+    cursor:pointer;
+
+    transition:.35s ease;
+}
+
+.saved-loan-card:hover{
+
+    transform:translateY(-7px);
+
+    background:linear-gradient(
+    135deg,
+    #eeeff1,
+    #fffeff);
+
+    color:rgb(160, 33, 33);
+
+    box-shadow:
+    0 20px 40px rgba(97, 104, 118, 0.25);
+}
+
+.saved-loan-card.active{
+
+    background:linear-gradient(
+    135deg,
+    #76787d,
+    #7138d3);
+
+    color:white;
+
+    box-shadow:
+    0 18px 40px rgba(37,99,235,.25);
+}
+
+/* =====================================================
+   CARD TOP
+===================================================== */
+
+.saved-loan-top{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:18px;
+}
+
+.saved-loan-top h4{
+
+    font-size:1.15rem;
+
+    font-weight:700;
+
+    margin:0;
+}
+
+/* =====================================================
+   DELETE BUTTON
+===================================================== */
+
+.delete-btn{
+
+    width:40px;
+
+    height:40px;
+
+    border:none;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    background:#fee2e2;
+
+    color:#dc2626;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    transition:.3s ease;
+}
+
+.delete-btn:hover{
+
+    background:#dc2626;
+
+    color:white;
+
+    transform:scale(1.08);
+}
+
+.saved-loan-card.active .delete-btn{
+
+    background:rgba(255,255,255,.18);
+
+    color:white;
+}
+
+.saved-loan-card.active .delete-btn:hover{
+
+    background:white;
+
+    color:#dc2626;
+}
+
+/* =====================================================
+   CARD BODY
+===================================================== */
+
+.saved-loan-body{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:18px;
+}
+
+.saved-loan-body div{
+
+    display:flex;
+
+    flex-direction:column;
+}
+
+.saved-loan-body span{
+
+    font-size:.82rem;
+
+    opacity:.75;
+
+    margin-bottom:8px;
+}
+
+.saved-loan-body strong{
+
+    font-size:1rem;
+
+    font-weight:700;
+}
+
+/* =====================================================
+   EMPTY STATE
+===================================================== */
+
+.loan-empty{
+
+    background:#ffffff;
+
+    border-radius:24px;
+
+    padding:70px 35px;
+
+    text-align:center;
+
+    border:1px solid rgba(226,232,240,.8);
+
+    box-shadow:
+    0 12px 35px rgba(15,23,42,.08);
+}
+
+.loan-empty h2{
+
+    font-size:2rem;
+
+    color:#0f172a;
+
+    margin-bottom:18px;
+}
+
+.loan-empty h3{
+
+    font-size:1.5rem;
+
+    color:#0f172a;
+
+    margin-bottom:15px;
+}
+
+.loan-empty p{
+
+    color:#64748b;
+
+    line-height:1.8;
+
+    max-width:500px;
+
+    margin:auto;
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width:1400px){
+
+.loan-summary-cards{
+
+    grid-template-columns:repeat(2,1fr);
+}
+
+.loan-info-grid{
+
+    grid-template-columns:1fr;
+}
+
+}
+
+@media (max-width:1100px){
+
+.loan-main-grid{
+
+    grid-template-columns:1fr;
+}
+
+.loan-form-card{
+
+    position:static;
+}
+
+}
+
+@media (max-width:768px){
+
+.loan-analyzer{
+
+    padding:20px;
+}
+
+.loan-header{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    gap:20px;
+}
+
+.loan-header h1{
+
+    font-size:2.2rem;
+}
+
+.loan-header p{
+
+    font-size:.95rem;
+}
+
+.loan-summary-cards{
+
+    grid-template-columns:1fr;
+}
+
+.loan-details-grid{
+
+    grid-template-columns:1fr;
+}
+
+.saved-loans-grid{
+
+    grid-template-columns:1fr;
+}
+
+.summary-card{
+
+    padding:22px;
+}
+
+.loan-summary-card{
+
+    padding:22px;
+}
+
+.loan-ai-card{
+
+    padding:22px;
+}
+
+.saved-loans-card{
+
+    padding:22px;
+}
+
+.loan-empty{
+
+    padding:50px 20px;
+}
+
+}
+
+@media (max-width:480px){
+
+.loan-header h1{
+
+    font-size:1.8rem;
+}
+
+.loan-badge{
+
+    font-size:.72rem;
+
+    padding:6px 12px;
+}
+
+.summary-card h2{
+
+    font-size:1.55rem;
+}
+
+.summary-card h4{
+
+    font-size:.85rem;
+}
+
+.loan-summary-card h3{
+
+    font-size:1.15rem;
+}
+
+.loan-ai-card h3{
+
+    font-size:1.2rem;
+}
+
+.saved-loan-top{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    gap:12px;
+}
+
+.saved-loan-body{
+
+    flex-direction:column;
+
+    gap:15px;
+}
+
+}
+
+/* =====================================================
+   SCROLLBAR
+===================================================== */
+
+.saved-loans-grid::-webkit-scrollbar{
+
+    width:6px;
+}
+
+.saved-loans-grid::-webkit-scrollbar-thumb{
+
+    background:rgba(37,99,235,.35);
+
+    border-radius:20px;
+}
+
+/* =====================================================
+   FADE ANIMATION
+===================================================== */
+
+@keyframes fadeLoan{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(25px);
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+    }
+
+}
+
+/* =====================================================
+   SMOOTH TRANSITIONS
+===================================================== */
+
+.summary-card,
+.loan-summary-card,
+.loan-ai-card,
+.saved-loan-card,
+.loan-form-card{
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease,
+        background .35s ease,
+        color .35s ease;
+}
+
+/* =====================================================
+   BUTTON IMPROVEMENTS
+===================================================== */
+
+.loan-summary-card button,
+.loan-ai-card button{
+
+    transition:.3s ease;
+}
+
+.loan-summary-card button:hover,
+.loan-ai-card button:hover{
+
+    transform:translateY(-2px);
+}
+
+/* =====================================================
+   CHART CARD
+===================================================== */
+
+.loan-summary-card .recharts-wrapper{
+
+    margin-top:20px;
+}
+
+.loan-summary-card .recharts-cartesian-grid line{
+
+    stroke:#e2e8f0;
+}
+
+.loan-summary-card .recharts-tooltip-wrapper{
+
+    border-radius:12px;
+}
+
+/* =====================================================
+   FINISH
+===================================================== */
+
+
+

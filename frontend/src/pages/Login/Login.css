@@ -1,0 +1,324 @@
+.auth-page {
+  display: flex;
+  justify-content: center;
+  padding: var(--space-8) var(--space-4);
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 400px;
+  padding: var(--space-6);
+}
+
+.auth-card h1 {
+  font-size: 1.5rem;
+  margin-bottom: var(--space-2);
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  margin-top: var(--space-5);
+}
+
+.auth-form label {
+    color: #bfdbfe;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.auth-error {
+  color: var(--color-debt);
+  font-size: 0.875rem;
+  background: var(--color-debt-soft);
+  padding: var(--space-3);
+  border-radius: var(--radius-sm);
+}
+
+.auth-switch {
+  margin-top: var(--space-5);
+  font-size: 0.875rem;
+  color: var(--color-muted);
+  text-align: center;
+}
+
+
+
+
+/* ===== Full Page ===== */
+
+.login-page {
+    min-height: 100vh;
+    background-image: url("../../assets/images/FinanceAI-login-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.login-page::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(2, 8, 23, 0.55);
+}
+
+
+
+.login-container{
+    position:relative;
+    z-index:2;
+
+    width:90%;
+    max-width:1200px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    gap:70px;
+}
+
+.login-left{
+
+    flex:1;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:white;
+
+    text-align:center;
+}
+
+.brand-title{
+
+    font-size:3rem;
+
+    font-weight:700;
+
+    margin-bottom:10px;
+
+    letter-spacing:1px;
+}
+
+.brand-subtitle{
+
+    font-size:1.1rem;
+
+    opacity:.9;
+
+    margin-bottom:30px;
+
+    max-width:420px;
+
+    line-height:1.7;
+}
+
+.login-animation{
+
+    width:520px;
+
+    max-width:100%;
+}
+
+
+
+
+
+/* ===========================
+   Premium Login Card
+=========================== */
+
+.login-card{
+
+    width:430px;
+
+    padding:45px;
+
+    border-radius:28px;
+
+    background: rgba(255,255,255,.14);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.22);
+
+    box-shadow:
+        0 25px 70px rgba(0,0,0,.45),
+        0 0 35px rgba(37,99,235,.15);
+
+    animation:cardFade .8s ease;
+}
+
+/* ===========================
+   Logo
+=========================== */
+
+.login-logo{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    margin-bottom:25px;
+}
+
+.logo-circle{
+
+    width:72px;
+
+    height:72px;
+
+    border-radius:50%;
+
+    background:linear-gradient(135deg,#2563eb,#7c3aed);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:30px;
+
+    box-shadow:0 10px 25px rgba(37,99,235,.35);
+
+    margin-bottom:15px;
+}
+
+.login-logo h2{
+
+    color:white;
+
+    font-size:2rem;
+
+    margin:0;
+}
+
+/* ===========================
+   Heading
+=========================== */
+
+.login-title{
+
+    color:white;
+
+    text-align:center;
+
+    margin-bottom:10px;
+
+    font-size:2.2rem;
+
+    font-weight:700;
+}
+
+.login-subtitle{
+
+    text-align:center;
+
+    color:rgba(255,255,255,.85);
+
+    line-height:1.7;
+
+    margin-bottom:35px;
+}
+
+/* ===========================
+   Login Button
+=========================== */
+
+.login-button {
+    width: 100%;
+    height: 50px;              /* Increase height */
+    min-height: 50px;
+
+    border: none;
+    border-radius: 14px;
+
+    background: linear-gradient(135deg, #2563eb, #5a4c73);
+
+    color: #fff;
+    font-size: 20px;           /* Bigger text */
+    font-weight: 700;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.login-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(37, 99, 235, 0.35);
+}
+/* ===========================
+   Bottom Text
+=========================== */
+
+.auth-switch{
+
+    margin-top:25px;
+
+    text-align:center;
+
+    color:rgba(255,255,255,.9);
+}
+
+.auth-switch a{
+
+    color:#aa9dff;
+
+    margin-left:6px;
+
+    text-decoration:none;
+
+    font-weight:600;
+}
+
+.auth-switch a:hover{
+
+    color:rgb(255, 255, 255);
+}
+
+
+
+.auth-form input {
+  width: 100%;
+  height: 45px;
+  padding: 0 18px;
+
+  background: rgba(206, 202, 202, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 12px;
+
+  color: #ffffff;
+  font-size: 15px;
+
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.auth-form input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.auth-form input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.4);
+  background: rgba(255, 255, 255, 0.18);
+}

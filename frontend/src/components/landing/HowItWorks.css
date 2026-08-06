@@ -1,0 +1,71 @@
+.how {
+  padding: 90px 0;
+  background: white;
+}
+
+.how__heading {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.how__subheading {
+  text-align: center;
+  color: #6b7280;
+  margin-bottom: 60px;
+  max-width: 650px;
+  margin-inline: auto;
+}
+
+.how__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.how__card {
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 30px;
+  transition: .3s;
+}
+
+.how__card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(0,0,0,.08);
+}
+
+.how__number {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #2563eb;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.how__card h3 {
+  margin-bottom: 15px;
+}
+
+.how__card p {
+  color: #6b7280;
+  line-height: 1.7;
+}
+
+@media (max-width:900px) {
+  .how__grid {
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+@media (max-width:600px) {
+  .how__grid {
+    grid-template-columns: 1fr;
+  }
+}

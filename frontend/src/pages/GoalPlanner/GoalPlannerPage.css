@@ -1,0 +1,1116 @@
+/* =====================================================
+   GOAL PLANNER PAGE
+===================================================== */
+
+.goal-planner-page{
+
+    width:100%;
+
+    padding:32px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:30px;
+}
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.planner-header{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+}
+
+.planner-badge{
+
+    width:max-content;
+
+    padding:8px 18px;
+
+    border-radius:999px;
+
+    background:linear-gradient(
+    135deg,
+    #eef4ff,
+    #f7f9ff);
+
+    color:#2563eb;
+
+    font-size:.8rem;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+    text-transform:uppercase;
+}
+
+.planner-header h1{
+
+    margin:0;
+
+    font-size:2.4rem;
+
+    font-weight:800;
+
+    color:#0f172a;
+}
+
+.planner-header p{
+
+    margin:0;
+
+    max-width:760px;
+
+    color:#64748b;
+
+    line-height:1.7;
+
+    font-size:1rem;
+}
+
+/* =====================================================
+   SUMMARY GRID
+===================================================== */
+
+.planner-summary-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(230px,1fr));
+
+    gap:22px;
+}
+
+/* =====================================================
+   SUMMARY CARD
+===================================================== */
+
+.summary-card{
+
+    background:white;
+
+    border-radius:22px;
+
+    padding:24px;
+
+    border:1px solid rgba(226,232,240,.9);
+
+    transition:.35s ease;
+
+    box-shadow:
+    0 8px 24px rgba(15,23,42,.05);
+}
+
+.summary-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:
+    0 20px 45px rgba(15,23,42,.10);
+}
+
+.summary-card span{
+
+    display:block;
+
+    color:#64748b;
+
+    font-size:.9rem;
+
+    margin-top:18px;
+
+    margin-bottom:10px;
+}
+
+.summary-card h2{
+
+    margin:0;
+
+    font-size:1.8rem;
+
+    font-weight:800;
+
+    color:#0f172a;
+}
+
+/* =====================================================
+   SUMMARY ICONS
+===================================================== */
+
+.summary-icon{
+
+    width:58px;
+
+    height:58px;
+
+    border-radius:18px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    color:white;
+
+    font-size:1.35rem;
+}
+
+.summary-icon.blue{
+
+    background:linear-gradient(
+    135deg,
+    #2563eb,
+    #1d4ed8);
+}
+
+.summary-icon.green{
+
+    background:linear-gradient(
+    135deg,
+    #16a34a,
+    #15803d);
+}
+
+.summary-icon.orange{
+
+    background:linear-gradient(
+    135deg,
+    #ea580c,
+    #c2410c);
+}
+
+.summary-icon.purple{
+
+    background:linear-gradient(
+    135deg,
+    #7c3aed,
+    #6d28d9);
+}
+
+/* =====================================================
+   MAIN GRID
+===================================================== */
+
+.planner-main-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    360px
+    1fr;
+
+    gap:28px;
+
+    align-items:start;
+}
+
+.planner-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:28px;
+}
+
+/* =====================================================
+   GOAL DETAILS CARD
+===================================================== */
+
+.planner-details-card{
+
+    background:#ffffff;
+
+    border-radius:24px;
+
+    padding:28px;
+
+    border:1px solid rgba(226,232,240,.9);
+
+    box-shadow:
+    0 10px 35px rgba(15,23,42,.05);
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:28px;
+}
+
+/* =====================================================
+   DETAILS HEADER
+===================================================== */
+
+.planner-details-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:20px;
+}
+
+.planner-details-header h2{
+
+    margin:0;
+
+    font-size:1.7rem;
+
+    font-weight:800;
+
+    color:#0f172a;
+}
+
+.planner-details-header p{
+
+    margin-top:8px;
+
+    color:#64748b;
+
+    font-size:.95rem;
+}
+
+/* =====================================================
+   DELETE BUTTON
+===================================================== */
+
+.planner-details-header .delete-btn{
+
+    width:42px;
+
+    height:42px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:#fee2e2;
+
+    color:#dc2626;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.planner-details-header .delete-btn:hover{
+
+    background:#dc2626;
+
+    color:white;
+
+    transform:scale(1.08);
+}
+
+/* =====================================================
+   GOAL STATS
+===================================================== */
+
+.planner-stats-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(180px,1fr));
+
+    gap:20px;
+}
+
+.planner-stat-card{
+
+    background:#f8fbff;
+
+    border:1px solid rgba(226,232,240,.9);
+
+    border-radius:18px;
+
+    padding:22px;
+
+    transition:.35s ease;
+}
+
+.planner-stat-card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:
+    0 18px 35px rgba(15,23,42,.08);
+}
+
+.planner-stat-card span{
+
+    display:block;
+
+    color:#64748b;
+
+    font-size:.88rem;
+
+    margin-top:16px;
+
+    margin-bottom:10px;
+}
+
+.planner-stat-card h3{
+
+    margin:0;
+
+    font-size:1.45rem;
+
+    font-weight:800;
+
+    color:#0f172a;
+}
+
+/* =====================================================
+   PROGRESS BAR
+===================================================== */
+
+.goal-progress-wrapper{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:14px;
+}
+
+.goal-progress-track{
+
+    width:100%;
+
+    height:12px;
+
+    background:#e2e8f0;
+
+    border-radius:999px;
+
+    overflow:hidden;
+}
+
+.goal-progress-fill{
+
+    height:100%;
+
+    border-radius:999px;
+
+    background:
+    linear-gradient(
+    90deg,
+    #2563eb,
+    #7c3aed);
+
+    transition:width .6s ease;
+}
+
+.goal-progress-wrapper span{
+
+    font-size:.9rem;
+
+    font-weight:700;
+
+    color:#475569;
+}
+
+/* =====================================================
+   CHART BOX
+===================================================== */
+
+.goal-chart-box{
+
+    background:white;
+
+    border:1px solid rgba(226,232,240,.9);
+
+    border-radius:18px;
+
+    padding:22px;
+
+    margin-top:6px;
+}
+
+/* =====================================================
+   AI GOAL COACH
+===================================================== */
+
+.planner-ai-card{
+
+    background:linear-gradient(
+    135deg,
+    #f8fbff,
+    #eef4ff);
+
+    border:1px solid rgba(226,232,240,.9);
+
+    border-radius:24px;
+
+    padding:28px;
+
+    text-align:center;
+
+    box-shadow:
+    0 10px 35px rgba(15,23,42,.05);
+
+    transition:.35s ease;
+}
+
+.planner-ai-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:
+    0 20px 45px rgba(37,99,235,.12);
+}
+
+/* =====================================================
+   AI ICON
+===================================================== */
+
+.ai-icon{
+
+    width:90px;
+
+    height:90px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:38px;
+
+    color:#ffffff;
+
+    margin-bottom:25px;
+
+    background:linear-gradient(
+        135deg,
+        #c6c9cf,
+        #7c3aed
+    );
+
+    box-shadow:
+        0 15px 35px rgba(37,99,235,.25);
+}
+
+.planner-ai-card:hover .planner-ai-icon{
+
+    transform:rotate(-8deg) scale(1.08);
+}
+
+/* =====================================================
+   AI TITLE
+===================================================== */
+
+.planner-ai-card h2{
+
+    margin:0 0 16px;
+
+    font-size:1.55rem;
+
+    font-weight:800;
+
+    color:#0f172a;
+}
+
+/* =====================================================
+   AI DESCRIPTION
+===================================================== */
+
+.planner-ai-card p{
+
+    margin:0 0 16px;
+
+    color:#64748b;
+
+    line-height:1.8;
+
+    font-size:.95rem;
+}
+
+.planner-ai-card strong{
+
+    color:#2563eb;
+
+    font-weight:800;
+}
+
+/* =====================================================
+   AI BUTTON
+===================================================== */
+
+.planner-ai-card .btn{
+
+    width:100%;
+
+    margin-top:20px;
+
+    justify-content:center;
+
+    border-radius:14px;
+
+    font-weight:700;
+}
+
+/* =====================================================
+   SAVED GOALS SECTION
+===================================================== */
+
+.planner-saved-section{
+
+    margin-top:12px;
+}
+
+/* =====================================================
+   SECTION HEADER
+===================================================== */
+
+.planner-section-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:20px;
+}
+
+.planner-section-header h2{
+
+    margin:0;
+
+    font-size:1.55rem;
+
+    font-weight:800;
+
+    color:#0f172a;
+}
+
+.planner-section-header span{
+
+    font-size:.92rem;
+
+    color:#64748b;
+
+    font-weight:600;
+}
+
+/* =====================================================
+   GOALS GRID
+===================================================== */
+
+.planner-goals-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(320px,1fr));
+
+    gap:22px;
+}
+
+/* =====================================================
+   SAVED GOAL CARD
+===================================================== */
+
+.planner-goal-card{
+
+    background:#f8fbff;
+
+    border-radius:18px;
+
+    padding:22px;
+
+    border:1px solid rgba(226,232,240,.9);
+
+    cursor:pointer;
+
+    transition:.35s ease;
+}
+
+.planner-goal-card:hover{
+
+    transform:translateY(-7px);
+
+    background:linear-gradient(
+    135deg,
+    #f3f5f9,
+    #ffffff);
+
+    box-shadow:
+    0 20px 40px rgba(15,23,42,.08);
+}
+
+.planner-goal-card.active{
+
+    background:linear-gradient(
+    135deg,
+    #6366f1,
+    #7c3aed);
+
+    color:white;
+
+    box-shadow:
+    0 20px 45px rgba(99,102,241,.30);
+}
+
+/* =====================================================
+   CARD TOP
+===================================================== */
+
+.planner-goal-top{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:18px;
+}
+
+.planner-goal-top h4{
+
+    margin:0;
+
+    font-size:1.15rem;
+
+    font-weight:700;
+}
+
+/* =====================================================
+   DELETE BUTTON
+===================================================== */
+
+.planner-goal-card .delete-btn{
+
+    width:38px;
+
+    height:38px;
+
+    border:none;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    background:#fee2e2;
+
+    color:#dc2626;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    transition:.3s ease;
+}
+
+.planner-goal-card .delete-btn:hover{
+
+    background:#dc2626;
+
+    color:white;
+
+    transform:scale(1.08);
+}
+
+.planner-goal-card.active .delete-btn{
+
+    background:rgba(255,255,255,.18);
+
+    color:white;
+}
+
+.planner-goal-card.active .delete-btn:hover{
+
+    background:white;
+
+    color:#dc2626;
+}
+
+/* =====================================================
+   CARD BODY
+===================================================== */
+
+.planner-goal-body{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:20px;
+}
+
+.planner-goal-body div{
+
+    display:flex;
+
+    flex-direction:column;
+}
+
+.planner-goal-body span{
+
+    font-size:.82rem;
+
+    opacity:.75;
+
+    margin-bottom:8px;
+}
+
+.planner-goal-body strong{
+
+    font-size:1rem;
+
+    font-weight:700;
+}
+
+.planner-goal-card.active
+.planner-goal-body span{
+
+    color:rgba(255,255,255,.82);
+}
+
+.planner-goal-card.active
+.planner-goal-body strong{
+
+    color:white;
+}
+
+/* =====================================================
+   EMPTY STATE
+===================================================== */
+
+.planner-empty{
+
+    background:white;
+
+    border:1px dashed #cbd5e1;
+
+    border-radius:18px;
+
+    padding:40px;
+
+    text-align:center;
+
+    color:#64748b;
+}
+
+/* =====================================================
+   RESPONSIVE DESIGN
+===================================================== */
+
+@media (max-width:1200px){
+
+    .planner-main-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .planner-content{
+
+        margin-top:12px;
+
+    }
+
+}
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width:992px){
+
+    .planner-summary-grid{
+
+        grid-template-columns:
+        repeat(2,minmax(0,1fr));
+
+    }
+
+    .planner-stats-grid{
+
+        grid-template-columns:
+        repeat(2,minmax(0,1fr));
+
+    }
+
+    .planner-goals-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .planner-ai-card{
+
+        padding:24px;
+
+    }
+
+}
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width:768px){
+
+    .goal-planner-page{
+
+        padding:20px;
+
+    }
+
+    .planner-header{
+
+        gap:10px;
+
+    }
+
+    .planner-header h1{
+
+        font-size:2rem;
+
+    }
+
+    .planner-header p{
+
+        font-size:.95rem;
+
+    }
+
+    .planner-summary-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .planner-stats-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .planner-details-card{
+
+        padding:22px;
+
+    }
+
+    .planner-details-header{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:16px;
+
+    }
+
+    .planner-goal-card{
+
+        padding:18px;
+
+    }
+
+    .planner-goal-top{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:14px;
+
+    }
+
+    .planner-goal-body{
+
+        flex-direction:column;
+
+        gap:14px;
+
+    }
+
+    .planner-ai-card{
+
+        padding:22px;
+
+    }
+
+}
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width:480px){
+
+    .summary-card{
+
+        padding:18px;
+
+    }
+
+    .summary-card h2{
+
+        font-size:1.45rem;
+
+    }
+
+    .summary-icon{
+
+        width:52px;
+
+        height:52px;
+
+        font-size:1.2rem;
+
+        border-radius:16px;
+
+    }
+
+    .planner-stat-card{
+
+        padding:18px;
+
+    }
+
+    .planner-stat-card h3{
+
+        font-size:1.2rem;
+
+    }
+
+    .planner-ai-card{
+
+        padding:18px;
+
+    }
+
+    .planner-ai-icon{
+
+        width:58px;
+
+        height:58px;
+
+        border-radius:18px;
+
+        font-size:1.35rem;
+
+    }
+
+    .planner-ai-card h2{
+
+        font-size:1.25rem;
+
+    }
+
+    .planner-goal-card{
+
+        padding:16px;
+
+    }
+
+}
+
+/* =====================================================
+   SMOOTH TRANSITIONS
+===================================================== */
+
+.summary-card,
+.planner-stat-card,
+.planner-goal-card,
+.planner-ai-card,
+.planner-details-card{
+
+    transition:
+    transform .35s ease,
+    box-shadow .35s ease,
+    background .35s ease,
+    color .35s ease;
+
+}
+
+/* =====================================================
+   HOVER EFFECTS
+===================================================== */
+
+.planner-details-card:hover{
+
+    box-shadow:
+    0 20px 45px rgba(15,23,42,.08);
+
+}
+
+.planner-stat-card:hover{
+
+    border-color:#c7d2fe;
+
+}
+
+.planner-ai-card:hover .planner-ai-icon{
+
+    transform:
+    rotate(-8deg)
+    scale(1.08);
+
+}
+
+.planner-goal-card:hover h4{
+
+    color:#4f46e5;
+
+}
+
+.planner-goal-card.active:hover h4{
+
+    color:white;
+
+}
+
+/* =====================================================
+   SCROLLBAR (OPTIONAL)
+===================================================== */
+
+.planner-content::-webkit-scrollbar{
+
+    width:6px;
+
+}
+
+.planner-content::-webkit-scrollbar-thumb{
+
+    background:#cbd5e1;
+
+    border-radius:999px;
+
+}
+
+.planner-content::-webkit-scrollbar-thumb:hover{
+
+    background:#94a3b8;
+
+}

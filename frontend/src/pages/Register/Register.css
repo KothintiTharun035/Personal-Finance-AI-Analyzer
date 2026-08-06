@@ -1,0 +1,384 @@
+/* ===========================
+   Register Page
+=========================== */
+
+.register-page {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    background: url("../../assets/images/FinanceAI-register-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    overflow: hidden;
+}
+
+/* ===========================
+   Dark Overlay
+=========================== */
+
+.register-overlay {
+    position: absolute;
+    inset: 0;
+
+    background: rgba(5, 16, 38, .45);
+    backdrop-filter: blur(2px);
+
+    z-index: 0;
+}
+
+/* ===========================
+   Main Container
+=========================== */
+
+.register-container {
+    width: 100%;
+    max-width: 1350px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 150px;
+
+    padding: 60px;
+
+    position: relative;
+    z-index: 2;
+}
+
+/* ===========================
+   Left Section
+=========================== */
+
+.register-left {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    text-align: center;
+
+    height: 100%;
+}
+
+.register-brand {
+    font-size:3rem;
+
+    font-weight:700;
+
+    margin-bottom:10px;
+
+    letter-spacing:1px;
+}
+
+.register-tagline {
+    max-width: 420px;
+
+    font-size: 1.15rem;
+
+    line-height: 1.75;
+
+    color: rgba(255,255,255,.9);
+
+    margin-top: px;
+    margin-bottom: px;
+}
+
+
+
+
+/* ===========================
+   Register Card
+=========================== */
+
+.register-card {
+
+    width: 430px;
+
+    padding: 45px;
+
+    border-radius: 28px;
+
+    background: rgba(255,255,255,.14);
+
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    border: 1px solid rgba(255,255,255,.18);
+
+    box-shadow:
+        0 25px 60px rgba(0,0,0,.45),
+        0 0 30px rgba(37,99,235,.18);
+
+    animation: cardFade .8s ease;
+}
+
+/* ===========================
+   Heading
+=========================== */
+
+.register-title {
+
+    font-size: 2.2rem;
+
+    font-weight: 700;
+
+    color: white;
+
+    text-align: center;
+
+    margin-bottom: 10px;
+}
+
+.register-subtitle {
+
+    text-align: center;
+
+    color: rgba(255,255,255,.88);
+
+    margin-bottom: 35px;
+
+    line-height: 1.7;
+}
+
+/* ===========================
+   Labels
+=========================== */
+
+.auth-form label {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: white;
+
+    font-weight: 600;
+}
+
+/* ===========================
+   Inputs
+=========================== */
+
+.auth-form input {
+
+    width: 100%;
+
+    height: 45px;
+
+    padding: 0 18px;
+
+    border-radius: 15px;
+
+    border: 1px solid rgba(255,255,255,.25);
+
+    background: rgba(255,255,255,.12);
+
+    color: white;
+
+    font-size: 16px;
+
+    outline: none;
+
+    transition: .3s;
+}
+
+.auth-form input::placeholder {
+
+    color: rgba(255,255,255,.55);
+}
+
+.auth-form input:focus {
+
+    border-color: #3b82f6;
+
+    background: rgba(255,255,255,.18);
+
+    box-shadow: 0 0 18px rgba(59,130,246,.35);
+}
+
+/* ===========================
+   Help Text
+=========================== */
+
+.auth-form small {
+
+    color: rgba(255,255,255,.75);
+}
+
+/* ===========================
+   Error
+=========================== */
+
+.auth-error {
+
+    margin: 20px 0;
+
+    padding: 14px;
+
+    border-radius: 10px;
+
+    background: rgba(220,38,38,.2);
+
+    border: 1px solid rgba(220,38,38,.35);
+
+    color: #fecaca;
+
+    text-align: center;
+}
+
+/* ===========================
+   Button
+=========================== */
+
+.register-button {
+
+    width: 100%;
+
+    margin-top: 20px;
+
+    height: 58px;
+
+    border: none;
+
+    border-radius: 14px;
+
+    background: linear-gradient(135deg, #2563eb, #5a4c73);
+
+    color: white !important;
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+    transition: .3s;
+}
+
+.register-button:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 15px 35px rgba(37,99,235,.35);
+}
+
+/* ===========================
+   Bottom Text
+=========================== */
+
+.auth-switch {
+
+    margin-top: 25px;
+
+    text-align: center;
+
+    color: rgba(255,255,255,.95);
+
+    font-size: 16px;
+}
+
+.auth-switch a {
+
+    color: #8ab4ff;
+
+    margin-left: 6px;
+
+    text-decoration: none;
+
+    font-weight: 700;
+}
+
+.auth-switch a:hover {
+
+    color: white;
+}
+
+/* ===========================
+   Animation
+=========================== */
+
+@keyframes cardFade {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(30px)
+            scale(.95);
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0)
+            scale(1);
+    }
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media (max-width: 992px) {
+
+    .register-container {
+
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 40px;
+    }
+
+    .register-brand {
+
+        font-size: 3.2rem;
+    }
+
+    .register-tagline {
+
+        margin: auto;
+    }
+
+    .register-card {
+
+        width: 100%;
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .register-container {
+
+        padding: 20px;
+    }
+
+    .register-card {
+
+        padding: 30px;
+    }
+
+    .register-title {
+
+        font-size: 2rem;
+    }
+
+    .register-brand {
+
+        font-size: 2.5rem;
+    }
+}

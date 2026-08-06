@@ -1,0 +1,135 @@
+.finance-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-5);
+}
+
+.finance-form__field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.finance-form__select {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 10px 12px;
+  font-size: 0.9375rem;
+  background: var(--color-surface);
+  color: var(--color-ink);
+}
+
+.finance-form__preview {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--color-paper);
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: var(--space-4);
+}
+
+.finance-form__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-4);
+}
+
+@media (max-width: 640px) {
+  .finance-form__row {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+.finance-submit-btn {
+  background: #171f33 !important;
+  color: #ffffff !important;
+  border: none !important;
+  border-radius: 12px !important;
+
+  height: 52px;
+
+  font-size: 17px;
+  font-weight: 700;
+
+  transition: all 0.3s ease;
+}
+
+.finance-submit-btn:hover {
+  background: #222d45 !important;
+  color: #ffffff !important;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 12px 24px rgba(23, 31, 51, 0.25);
+}
+
+.finance-submit-btn:active {
+  transform: scale(0.98);
+} 
+
+.auth-error {
+    width: 100%;
+    padding: 14px 18px;
+    margin-bottom: 20px;
+
+    background: #fee2e2;
+    border: 1px solid #ef4444;
+    border-radius: 12px;
+
+    color: #991b1b;
+    font-size: 15px;
+    font-weight: 600;
+
+    text-align: center;
+}
+
+/* Investment Analyzer Button */
+
+.investment-form-section .btn--primary {
+  background: linear-gradient(135deg, #050505, #000000);
+  color: #fff;
+  border: none;
+  border-radius: 14px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.investment-form-section .btn--primary:hover {
+  background: linear-gradient(135deg, #000000, #1b1b1c);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(59,130,246,.35);
+}
+
+.investment-form-section .btn--primary:active {
+  transform: scale(.98);
+}
+
+.goal-save-btn {
+  background: #171f33 !important;
+  color: #ffffff !important;
+  border: none !important;
+  border-radius: 12px !important;
+
+  height: 52px;
+
+  font-size: 17px;
+  font-weight: 700;
+
+  transition: all 0.3s ease;
+}
+
+.goal-save-btn:hover {
+  background: #222d45 !important;
+  color: #ffffff !important;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 12px 24px rgba(23, 31, 51, 0.25);
+}

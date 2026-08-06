@@ -1,0 +1,12 @@
+spring:
+  data:
+    mongodb:
+      uri: ${MONGODB_URI}
+
+jwt:
+  secret: ${JWT_SECRET}
+  expiration: 86400000
+
+gemini:
+  api:
+    key: ${GEMINI_API_KEY}

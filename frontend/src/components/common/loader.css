@@ -1,0 +1,29 @@
+.loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3);
+  padding: var(--space-6);
+  color: var(--color-muted);
+  font-size: 0.875rem;
+}
+
+.loader--fullscreen {
+  min-height: 100vh;
+}
+
+.loader__ring {
+  border-radius: 50%;
+  border: 3px solid var(--color-border);
+  border-top-color: var(--color-ink);
+  animation: loader-spin 0.7s linear infinite;
+}
+
+.loader__ring--sm { width: 18px; height: 18px; border-width: 2px; }
+.loader__ring--md { width: 28px; height: 28px; }
+.loader__ring--lg { width: 40px; height: 40px; }
+
+@keyframes loader-spin {
+  to { transform: rotate(360deg); }
+}
