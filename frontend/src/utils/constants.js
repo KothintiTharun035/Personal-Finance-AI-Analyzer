@@ -1,4 +1,5 @@
-export const API_BASE_URL = '/api'
+export const API_BASE_URL =
+  import.meta.env.VITE_API_URL || "http://localhost:8080/api";
 
 export const LOAN_TYPES = [
   { label: 'Home Loan', value: 'HOME_LOAN' },
