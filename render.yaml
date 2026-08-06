@@ -1,13 +1,12 @@
 services:
   - type: web
     name: finance-ai-backend
-    runtime: java
+
+    env: docker
 
     rootDir: backend
 
-    buildCommand: chmod +x mvnw && ./mvnw clean package
-
-    startCommand: java -jar target/*.jar
+    dockerfilePath: ./Dockerfile
 
     plan: free
 
